@@ -1,0 +1,16 @@
+[project]
+name = "msg-agent"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "eritainn7",email = "sanyapridava@mail.ru"}
+]
+requires-python = "^3.12"
+dependencies = [
+    "fastapi[standard] (>=0.162.2,<0.163.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
