@@ -8,7 +8,6 @@ authors = [
 requires-python = "^3.12"
 dependencies = [
     "fastapi[standard] (>=0.162.2,<0.163.0)",
-    "pytest (>=9.2.0,<10.0.0)",
     "langgraph (>=1.2.20,<2.0.0)",
     "langchain (>=1.4.9,<2.0.0)",
     "ollama (>=0.6.3,<0.7.0)"
@@ -18,3 +17,8 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.2.0,<10.0.0)"
+]
