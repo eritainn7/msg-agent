@@ -1013,6 +1013,22 @@ typing-extensions = ">=4.7.0"
 uuid-utils = ">=0.12.0"
 
 [[package]]
+name = "langchain-ollama"
+version = "1.1.0"
+description = "An integration package connecting Ollama and LangChain"
+optional = false
+python-versions = "<4.0.0,>=3.10.0"
+groups = ["main"]
+files = [
+    {file = "langchain_ollama-1.1.0-py3-none-any.whl", hash = "sha256:43ac83a6eacb0f43855810739794dd55019e0d9b17bdcf3ecb3b1991ac3b59dd"},
+    {file = "langchain_ollama-1.1.0.tar.gz", hash = "sha256:f776f56f6782ae4da7692579b94a6575906118318d1023b455d7207f9d059811"},
+]
+
+[package.dependencies]
+langchain-core = ">=1.2.21,<2.0.0"
+ollama = ">=0.6.1,<1.0.0"
+
+[[package]]
 name = "langchain-protocol"
 version = "0.0.21"
 description = "Python bindings for the LangChain agent streaming protocol"
@@ -3223,4 +3239,4 @@ cffi = ["cffi (>=1.17,<2.0) ; platform_python_implementation != \"PyPy\" and pyt
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "1b76f40f81b4ebe5bf9924eb53e5dd64c5fb0025d66d3869f5036427f3903582"
+content-hash = "4e42ff717f71eff11524437119e897f746f7c22282686ed7dbf916809eea7d6c"
