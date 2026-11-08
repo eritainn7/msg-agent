@@ -31,3 +31,6 @@ jobs:
 
     - name: Run tests
       run: poetry run pytest tests/ -m "not integration"
+      env:
+        MODEL: "gemma4:e4b"
+        BASE_URL: "http://localhost:11434"
